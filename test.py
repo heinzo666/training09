@@ -9,9 +9,4 @@ full_local_path = "/content/training"
 
 repo = Repo(full_local_path)
 repo.git.add("-A")
-repo.index.commit(user)
 
-origin = repo.remote(name="origin")
-origin.push()
-
-os.chdir('/content')
